@@ -1,4 +1,4 @@
-var ingredients = $("#ingredients");
+var ingredients = $("#ingredientList");
 var nation = "japanese";
 var nationInput = $("#nationality");
 var submit = $("#submit");
