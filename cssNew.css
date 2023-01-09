@@ -2,3 +2,12 @@
     margin: 0;
     padding:0;
 }
+.header {
+    
+    position:relative;
+}
+.icon {
+    position:relative;
+min-width:100%;
+min-height: 100vh;
+}
