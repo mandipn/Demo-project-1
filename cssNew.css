@@ -40,3 +40,16 @@ nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
+}
+
+.hero-img {
+   width:auto;
+
+}
+.nav-links {
+    flex:1;
+    text-align: right;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative
+}
