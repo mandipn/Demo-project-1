@@ -14,7 +14,7 @@ nationInput.on("click", function () {
 
   // First API call, returns all the meals from the clicked nation
   // Success property calls the mealId function so we can use the data in the second API call
-  // test comment
+  
 
   $.ajax({
     url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=" + nation,
@@ -101,3 +101,4 @@ nationInput.on("click", function () {
     });
   }
 });
+
