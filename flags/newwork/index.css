@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.header {
+    
+    position:relative;
+}
+.icon {
+    position:relative;
+min-width:100%;
+min-height: 100vh;
+}
+.cover {
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(#F53803),rgba(#F53803));
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.title-colour {
+    color: #F53803;
+
+}
+.title-of-app {
+    color: antiquewhite;
+}
+h1 {
+    color: #F53803;
+   
+}
+h2 {
+    color: #F53803;
+}
+h4 {
+    color:"warning";
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+
+.hero-img {
+   width:auto;
+
+}
+.nav-links {
+    flex:1;
+    text-align: right;
+    display: inline-block;
+    padding: 8px 12px;
+    position:relative
+}

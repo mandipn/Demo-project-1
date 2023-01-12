@@ -1,170 +1,217 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="index.css">
-    <title>Foodtogo</title>
-  </head>
-  <body>
-    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="logo-recipe-app (1).png"></a>
-        <a href="#" class="title-of-app">Food<span class="title-colour">ToGo</span></a> -->
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Cuisines</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Nutritional Information</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About App</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  
-            </ul>
-        </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+  <title>Foodtogo</title>
+</head>
+<div class="container-fluid">
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div id="logo-items">
+        <img src="logo-recipe-app (1).png" class="logo-bg" alt="icon">
+        <a href="#" class="title-of-app"><span id="span-el">Food</span></a>
+      </div>
+
+      <!-- <a href="#" class="title-of-app"><span>Food</span><span class="twogo">ToGo</span></a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#carouselExampleCaptions">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cuisines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nutritional information</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About app</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Social Media">Social Media</a>
+          </li>
+        </ul>
+
+      </div>
     </div>
-    </nav> -->
+  </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-           <img src="logo-recipe-app (1).png" alt="icon">
-            <a class="navbar-brand" href="#">Foodtogo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cuisines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nutritional information</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About app</a>
-                
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-                
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
 
-    <!--carousel-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!--carousel-->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="brooke-lark-08bOYnH_r_E-unsplash.jpg" class="d-block w-100" alt="food-pic">
+        <div class="carousel-caption d-flex align-items-center d-md-block" id="first-pic">
+          <h3>Welcome to Food2Go</h3>
+          <p>Search by nationality for your favourite meals and their respective nutritional value</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="brooke-lark-08bOYnH_r_E-unsplash.jpg" class="d-block w-100" alt="food-pic">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Welcome to Foodtogo</h5>
-              <p>Search by nationality for your favourite meals and their respective nutritional value</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="istockphoto-1328399434-612x612.jpg" class="d-block w-100" alt="demo-pic">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Demo of product</h5>
-              <p>Here is an example of what you can expect with this app</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="istockphoto-615422436-612x612.jpg" class="d-block w-100" alt="more-demo">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>More Demo</h5>
-              <p>More examples.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <hr class="my-4">
-      <!--disclaimer section-->
-      <div class="mt-5 p-5 bg-secondary text-white rounded">
-        <h1>Disclaimer!</h1>
-        <p>Some countries may not be listed</p>
+      <div class="carousel-item">
+        <img src="/project-version-1.0/assets/logo/istockphoto-1328399434-612x612.jpg" class="d-block w-100" alt="demo-pic">
+        <div class="carousel-caption d-none d-md-block" id="h4-section">
+          <h4>Demo of product</h4>
+          <p>This app allows you to select a nationality and then get recipes, select the flags below!</p>
+        </div>
       </div>
+      <div class="carousel-item" id="h5-section">
+        <img src="/project-version-1.0/assets/logo/istockphoto-615422436-612x612.jpg" class="d-block w-100" alt="more-demo">
+        <div class="carousel-caption" id="carousel-caption-3">
+          <h5>More Demo</h5>
+          <p>More examples.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-      <hr class="my-4">
-      <!--flags go here-->
-     
-        <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6 col-mid-4">
-          <img src ="flags/us.png" id="American" alt="American flag">
-          <img src ="flags/fr.png" id="French" alt="French flag">
-          <img src ="/flags/ca.png" id="Canadian" alt="Canadian flag">
+  </section>
+
+  <div class="flag-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="flags/pl.png" id="flag" title="Polish flag">
+        </div>
+        <div class="col">
+          <img src="flags/cn.png" id="flag" alt="Chinese flag">
+        </div>
+        <div class="col">
+          <img src="flags/nl.png" id="flag" alt="Dutch flag">
+        </div>
+        <div class="col">
+          <img src="flags/eg.png" id="flag" alt="Eygptian flag">
+        </div>
+        <div class="col">
+          <img src="flags/gr.png" id="flag" alt="Greek flag">
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img src="flags/in.png" id="flag" alt="Indian flag">
+            </div>
+            <div class="col">
+              <img src="flags/ie.png" id="flag" alt="Irish flag">
+            </div>
+            <div class="col">
+              <img src="flags/it.png" id="flag" alt="Italian flag">
+            </div>
+            <div class="col">
+              <img src="flags/jp.png" id="flag" alt="Japanese flag">
+            </div>
+            <div class="col">
+              <img src="flags/kn.png" id="flag" alt="Kenyan flag">
             </div>
 
-        </div>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <img src="flags/my.png" id="flag" alt="Malaysian flag">
+                </div>
+                <div class="col">
+                  <img src="flags/mx.png" id="flag" alt="Mexican flag">
+                </div>
+                <div class="col">
+                  <img src="flags/ma.png" id="flag" alt="Morrocan flag">
+                </div>
+                <div class="col">
+                  <img src="flags/hr.png" id="flag" alt="Croatian flag">
+                </div>
+                <div class="col">
+                  <img src="flags/es.png" id="Spanish" alt="Spanish flag">
+                </div>
 
-        </div>
-       
-        <img src ="flags/jm.png" id="Jamaican" alt="Jamaican flag">
-        <img src ="flags/cn.png" id="Chinese" alt="Chinese flag">
-        <img src ="flags/nl.png" id="Dutch" alt="Dutch flag">
-        <img src ="flags/eg.png" id="Eygptian" alt="Eygptian flag">
-        <img src ="flags/gr.png" id="Greek" alt="Greek flag">
-        <img src ="flags/in.png" id="Indian" alt="Indian flag">
-        <img src ="flags/ie.png" id="Irish" alt="Irish flag">
-        <img src ="flags/it.png" id="Italian" alt="Italian flag">
-        <img src ="flags/jp.png" id="Japanese" alt="Japanese flag">
-        <img src ="flags/kn.png" id="Kenyan" alt="Kenyan flag">
-        <img src ="flags/my.png" id="Malaysian" alt="Malaysian flag">
-        <img src ="flags/mx.png" id="Mexican" alt="Mexican flag">
-        <img src ="flags/ma.png" id="Moroccon" alt="Morrocan flag">
-        <img src ="flags/hr.png" id="Croatian" alt="Croatian flag">
-        <img src ="flags/es.png" id="Spanish" alt="Spanish flag">
-        <img src ="flags/gb.png" id="British" alt="British flag">
-        <img src ="/flags/th.png" id="Thai" alt="Thai flag">
-        <img src ="/flags/vn.png" id="Vietnamese" alt="Vietnamese flag">
-        <img src ="flags/tr.png" id="Turkish" alt="Turkish flag">
-        <img src ="flags/tn.png" id="Tunisian" alt="Tunisian flag">
-        <img src ="flags/pl.png" id="Polish" alt="Polish flag">
-        <img src ="flags/pt.png" id="Portuguese" alt="Portuguese flag">
-    
-    
-    
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <img src="flags/gb.png" id="flag" alt="British flag">
+                    </div>
+                    <div class="col">
+                      <img src="/flags/th.png" id="flag" alt="Thai flag">
+                    </div>
+                    <div class="col">
+                      <img src="/flags/vn.png" id="flag" alt="Vietnamese flag">
+                    </div>
+                    <div class="col">
+                      <img src="flags/tr.png" id="flag" alt="Turkish flag">
+                    </div>
+                    <div class="col">
+                      <img src="flags/tn.png" id="flag" alt="Tunisian flag">
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="flags/pt.png" id="flag" alt="Portuguese flag">
+                        </div>
+                        <div class="col">
+                          <img src="flags/us.png" id="flag" alt="American flag">
+                        </div>
 
-    
-    
-  </body>
+                        <div class="col">
+                          <img src="flags/fr.png" id="Flag" alt="French flag">
+                        </div>
+                        <div class="col">
+                          <img src="/flags/ca.png" id="flag" alt="Canadian flag">
+                        </div>
+                        <div class="col">
+                          <img src="flags/jm.png" id="flag" alt="Jamaican flag">
+                        </div>
+
+                      </div>
+
+                      <a href="#Social Media" class="fa fa-facebook"></a>
+                      <a href="#Social Media" class="fa fa-twitter"></a>
+
+
+
+                      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+                        <script src="./project-version-1.0/script.js"></script>
+
+
+</div>
+</body>
+
 </html>
