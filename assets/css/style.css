@@ -1,0 +1,49 @@
+section {
+    font-family: "Poppins", sans-serif;
+}
+
+section.welcome {
+    margin-top: 100px;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+.flags {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.meals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flags img {
+    width: 55px;
+    height: auto;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.flags a {
+    transition: transform .2s;
+}
+
+.flags a:hover {
+    transform: scale(1.3);
+}
+
+.meals.card {
+    cursor: pointer
+}
