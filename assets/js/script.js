@@ -21,7 +21,7 @@ $(document).ready(function () {
             //store meals data to be accessed later on another page
             storeDataToLocalStorage("meals", data)
             //open meals page
-            window.location.href = "../../meals.html"
+            window.location.href = "./meals.html"
 
         })
 
