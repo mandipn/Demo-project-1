@@ -63,7 +63,7 @@ $("document").ready(function () {
                 // store recipe in local storage to be used in the later on another page
                 storeDataToLocalStorage("recipe", data)
                 // open nutrition html page
-                window.location.href = "../../nutrition.html"
+                window.location.href = "./nutrition.html"
             })
         })
 
