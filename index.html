@@ -1,129 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Food2Go</title>
+
+  <!-- Favicons -->
+  <link href="./assets/favicon/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-  <div class="container">
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/logo/logo.png" width="50" height="50" class="d-inline-block align-top" alt="">
-        Food2Go
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./assets/logo/logo.png" alt="">
+        <h1>Food2Go<span>.</span></h1>
       </a>
-    </nav>
 
-    <section class="welcome">
-      <div class="text-center col">
-        <h1>Welcome to Food2Go</h1>
-        <p class>Search by country for your favourite meals and their respective nutritional value</p>
-      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
 
+        </ul>
+      </nav><!-- .navbar -->
 
-      <div class="flags col">
+    </div>
+  </header><!-- End Header -->
 
-        <a href=""><img src="./assets/flags/jp.png" title="Japanese" /></a>
-        <a href=""><img src="./assets/flags/ca.png" title="Canadian" /></a>
-        <a href=""><img src="./assets/flags/cn.png" title="Chinese" /></a>
-        <a href=""><img src="./assets/flags/eg.png" title="Egyptian" /></a>
-        <a href=""><img src="./assets/flags/es.png" title="Spanish" /></a>
-        <a href=""><img src="./assets/flags/fr.png" title="French" /></a>
-        <a href=""><img src="./assets/flags/gb.png" title="British" /></a>
-        <a href=""><img src="./assets/flags/gr.png" title="Greek" /></a>
-        <a href=""><img src="./assets/flags/hr.png" title="Croatian" /></a>
-        <a href=""><img src="./assets/flags/ie.png" title="Irish" /></a>
-        <a href=""><img src="./assets/flags/in.png" title="Indian" /></a>
-        <a href=""><img src="./assets/flags/it.png" title="Italian" /></a>
-        <a href=""><img src="./assets/flags/jm.png" title="Jamaican" /></a>
-        <a href=""><img src="./assets/flags/ke.png" title="Kenyan" /></a>
-        <a href=""><img src="./assets/flags/ma.png" title="Moroccan" /></a>
-        <a href=""><img src="./assets/flags/mx.png" title="Mexican" /></a>
-        <a href=""><img src="./assets/flags/my.png" title="Malaysian" /></a>
-        <a href=""><img src="./assets/flags/nl.png" title="Dutch" /></a>
-        <a href=""><img src="./assets/flags/pl.png" title="Polish" /></a>
-        <a href=""><img src="./assets/flags/pt.png" title="Portuguese" /></a>
-        <a href=""><img src="./assets/flags/ru.png" title="Russian" /></a>
-        <a href=""><img src="./assets/flags/th.png" title="Thai" /></a>
-        <a href=""><img src="./assets/flags/tn.png" title="Tunisian" /></a>
-        <a href=""><img src="./assets/flags/tr.png" title="Turkish" /></a>
-        <a href=""><img src="./assets/flags/us.png" title="American" /></a>
-        <a href=""><img src="./assets/flags/vn.png" title="Vietnamese" /></a>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
 
-      </div>
-
-    </section>
-
-
-    <section class="meals">
-      <div id="meals" class="row">
-
-      </div>
-
-    </section>
-
-    <section class="nutrition">
-
-      <h2 id="meal-title" class="text-center mb-3"> Meal Name</h2>
-
-      <div class="row">
-        <div class="d-flex flex-column">
-
-          <div class="col" id="ingredients">
-            <p><b>Ingredients:</b></p>
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">Welcome to <span>Food2Go</span></h2>
+            <p data-aos="fade-up">Ever wondered what nutrients your favourite dish contains? Are you curious about
+              its recipe and nutritional information?
+            </p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Lets Go</a>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div class="col" id="nutrition-facts">
-            <p><b>Nutrition Details:</b></p>
-            <nav style="margin-bottom: 1rem;">
-              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-table-tab" data-toggle="tab" href="#nav-table" role="tab"
-                  aria-controls="nav-table" aria-selected="true">Table</a>
-                <a class="nav-item nav-link" id="nav-chart-tab" data-toggle="tab" href="#nav-chart" role="tab"
-                  aria-controls="nav-chart" aria-selected="false">Chart</a>
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
 
+      <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-food-1-min.jpg)">
+      </div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-food-2-min.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-food-3-min.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-food-4-min.jpg)"></div>
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-food-5-min.jpg)"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+
+        <div class="row justify-content-between gy-4">
+          <div class="col-12 mt-0 d-flex align-items-center flex-column" style="height:100vh;" data-aos="fade-up">
+            <div class="content">
+              <h3>Search for food by country</h3>
+
+            </div>
+            <div class="flags content">
+
+              <a href=""><img src="./assets/flags/jp.png" title="Japanese" /></a>
+              <a href=""><img src="./assets/flags/ca.png" title="Canadian" /></a>
+              <a href=""><img src="./assets/flags/cn.png" title="Chinese" /></a>
+              <a href=""><img src="./assets/flags/eg.png" title="Egyptian" /></a>
+              <a href=""><img src="./assets/flags/es.png" title="Spanish" /></a>
+              <a href=""><img src="./assets/flags/fr.png" title="French" /></a>
+              <a href=""><img src="./assets/flags/gb.png" title="British" /></a>
+              <a href=""><img src="./assets/flags/gr.png" title="Greek" /></a>
+              <a href=""><img src="./assets/flags/hr.png" title="Croatian" /></a>
+              <a href=""><img src="./assets/flags/ie.png" title="Irish" /></a>
+              <a href=""><img src="./assets/flags/in.png" title="Indian" /></a>
+              <a href=""><img src="./assets/flags/it.png" title="Italian" /></a>
+              <a href=""><img src="./assets/flags/jm.png" title="Jamaican" /></a>
+              <a href=""><img src="./assets/flags/ke.png" title="Kenyan" /></a>
+              <a href=""><img src="./assets/flags/ma.png" title="Moroccan" /></a>
+              <a href=""><img src="./assets/flags/mx.png" title="Mexican" /></a>
+              <a href=""><img src="./assets/flags/my.png" title="Malaysian" /></a>
+              <a href=""><img src="./assets/flags/nl.png" title="Dutch" /></a>
+              <a href=""><img src="./assets/flags/pl.png" title="Polish" /></a>
+              <a href=""><img src="./assets/flags/pt.png" title="Portuguese" /></a>
+              <a href=""><img src="./assets/flags/ru.png" title="Russian" /></a>
+              <a href=""><img src="./assets/flags/th.png" title="Thai" /></a>
+              <a href=""><img src="./assets/flags/tn.png" title="Tunisian" /></a>
+              <a href=""><img src="./assets/flags/tr.png" title="Turkish" /></a>
+              <a href=""><img src="./assets/flags/us.png" title="American" /></a>
+              <a href=""><img src="./assets/flags/vn.png" title="Vietnamese" /></a>
+            </div>
+
+            <div>
+
+              <div class="position-relative">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-lg-12 col-md-12">
+                      <div class="social-links d-flex justify-content-center mt-3">
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i
+                            class="bi bi-twitter"></i></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><i
+                            class="bi bi-github"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </nav>
-            <div class="tab-content" id="nav-tabContent">
-              <div class="tab-pane fade show active" id="nav-table" role="tabpanel" aria-labelledby="nav-table-tab">
+
+              <div class="footer-legal text-center position-relative">
+                <div class="container">
+                  <div class="copyright">
+                    &copy; Copyright <strong><span>Food2Go</span></strong>. All Rights Reserved
+                  </div>
+                  <div class="credits">
+                    Designed by <a href="#">Food2Go Team</a>
+                  </div>
+                </div>
               </div>
-              <div class="tab-pane fade" id="nav-chart" role="tabpanel" aria-labelledby="nav-chart-tab"
-                style="height: 300px; width: 100%;">
-              </div>
+
             </div>
           </div>
 
         </div>
 
-        <div class="col">
-          <img src="" class="float-right" height=auto width=auto />
-        </div>
       </div>
 
-    </section>
+    </section><!-- End Get Started Section -->
 
-  </div>
+  </main><!-- End #main -->
 
 
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
-  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/js/main.js"></script>
   <script src="./assets/js/script.js" type="module"></script>
-  <script src="./assets/js/chart.js" type="module"></script>
+
 </body>
 
 </html>

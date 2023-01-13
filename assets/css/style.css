@@ -1,17 +1,7 @@
-section {
-    font-family: "Poppins", sans-serif;
-}
-
-section.welcome {
-    margin-top: 100px;
-}
-
-p {
-    font-size: 20px;
-}
-
-nav {
-    margin-bottom: 50px;
+.flags img {
+    width: 80px;
+    height: auto;
+    box-shadow: 2px 2px 2px 2px gray;
 }
 
 .flags {
@@ -20,20 +10,7 @@ nav {
     grid-template-columns: auto auto auto auto auto auto auto;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-}
-
-
-.meals {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flags img {
-    width: 55px;
-    height: auto;
-    box-shadow: 2px 2px 2px 2px gray;
+    margin-top: 16px;
 }
 
 .flags a {
@@ -44,6 +21,75 @@ nav {
     transform: scale(1.3);
 }
 
-.meals.card {
-    cursor: pointer
+
+.btn-meal {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #000;
+    border: 2px solid var(--color-primary);
+}
+
+.btn-meal:hover {
+    background: var(--color-primary);
+}
+
+.card-body h5 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+h2#meal-origin::after,
+h2#meal-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 85px;
+    height: 4px;
+    background: var(--color-primary);
+    /* left: calc(50% - 30px); */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.p-2 p {
+    padding: 0px;
+}
+
+#meal-image img {
+    object-fit: cover;
+}
+
+#ingredients-scroll {
+    overflow-y: auto;
+    height: 883px;
+}
+
+
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-primary);
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
 }

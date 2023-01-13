@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Food2Go</title>
+
+  <!-- Favicons -->
+  <link href="./assets/favicon/favicon.ico" rel="icon">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="./assets/logo/logo.png" alt="">
+        <h1>Food2Go<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/grid-food-5-bg.jpg');">
+      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2 id="meal-title">Meal Name</h2>
+
+      </div>
+    </div>
+    <!-- Start of Ingredients -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-3">
+            <div id="recipe" class="info-item  d-flex flex-column" style="max-height: 882px;">
+              <h3 class="p-2">Ingredients</h3>
+
+              <div id="ingredients-scroll">
+                <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="ingredients">
+                </div>
+              </div>
+
+
+            </div>
+          </div><!-- End Ingredients -->
+
+          <!-- Start of Meal Image -->
+          <div class="col-lg-9 col-md-6">
+            <div id="meal-image" class="info-item d-flex flex-column justify-content-center align-items-center">
+            </div>
+          </div><!-- End Meal Image -->
+
+        </div>
+
+        <!-- Start of Nutrients Table -->
+        <div class="row gy-4 mt-3">
+          <h3 id="no-data" style="color: #dc3545;" class="text-center">
+          </h3>
+          <div class="col-lg-6 ">
+            <h3 id="nutrients-title">Nutrition Details</h3>
+            <div class="nutrients-table">
+            </div>
+
+          </div><!-- End Nutrients Table -->
+
+          <div class="col-lg-6">
+            <div class="chart" style="height: 300px; width: 100%;">
+
+            </div>
+
+          </div><!-- End Chart -->
+
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/nutrition.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,15 +1,5 @@
-import { getNutritionData } from "./storage.js"
-
-$("#nav-chart-tab").click(function () {
-	let nutritionData = getNutritionData()
-
-	if (!nutritionData) {
-		$("#nav-chart").empty()
-		$("#nav-chart").append("<p> No data to plot</p>")
-		return
-	}
-
-	let { Calories, FAT, Protein, Carbs } = computePercentage(nutritionData)
+export function drawChart(nutritionData) {
+	let { Calories, Fat, Protein, Carbs } = computePercentages(nutritionData)
 
 	var options = {
 		title: {
@@ -17,8 +7,8 @@ $("#nav-chart-tab").click(function () {
 			fontWeight: "lighter",
 			margin: 2,
 		},
-		width: 350,
-		height: 250,
+		// width: 600,
+		height: 400,
 		animationEnabled: true,
 		willReadFrequently: true,
 		data: [{
@@ -30,24 +20,27 @@ $("#nav-chart-tab").click(function () {
 			indexLabelFontSize: 15,
 			indexLabel: "{label} - {y}%",
 			dataPoints: [
-				{ y: FAT, label: "FAT" },
-				{ y: Carbs, label: "Carbs" },
+				{ y: Fat, label: "Fat" },
+				{ y: Carbs, label: "Carbohydrates" },
 				{ y: Protein, label: "Protein" },
 			]
 		}]
 	};
 
-	$("#nav-chart").CanvasJSChart(options);
-})
+	$(".chart").CanvasJSChart(options);
 
+}
 
-function computePercentage({ Calories, FAT, Protein, Carbs }) {
-	let totalNutrients = FAT + Protein + Carbs
+function computePercentages({ Calories, Fat, Protein, Carbohydrates }) {
+	let fatValue = Fat[0]
+	let proteinValue = Protein[0]
+	let carbsValue = Carbohydrates[0]
+	let totalNutrients = fatValue + proteinValue + carbsValue
 
 	return {
 		Calories: Calories,
-		FAT: Number((FAT / totalNutrients) * 100).toFixed(1),
-		Protein: Number((Protein / totalNutrients) * 100).toFixed(1),
-		Carbs: Number((Carbs / totalNutrients) * 100).toFixed(1)
+		Fat: Number((fatValue / totalNutrients) * 100).toFixed(1),
+		Protein: Number((proteinValue / totalNutrients) * 100).toFixed(1),
+		Carbs: Number((carbsValue / totalNutrients) * 100).toFixed(1)
 	}
 }
