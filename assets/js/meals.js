@@ -101,7 +101,7 @@ $("document").ready(function () {
             .map(item => item.trim())
     }
 
-    // making recipe from both ingredients and their measures
+    // making recipe from ingredients and their respective measures
     function makeRecipe(measures, ingredients) {
         let recipe = []
         measures.forEach(function (measure, i) {
