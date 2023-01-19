@@ -1,4 +1,5 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', () => {
+  "use strict";
   /**
    * Preloader
    */
